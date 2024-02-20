@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
     <div
-      className="flex justify-center items-center min-h-screen overflow-hidden"
+      className="flex justify-center items-center h-screen overflow-hidden"
       style={{
         background: `url(${banner}) no-repeat center center / cover`,
       }}
