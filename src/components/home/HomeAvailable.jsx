@@ -8,7 +8,7 @@ import { SiSemanticweb, SiSimilarweb } from "react-icons/si";
 const HomeAvailable = () => {
   return (
     <div
-      className="min-h-screen w-full px-4 lg:px-[100px] flex justify-center items-center"
+      className="min-h-screen w-full px-4 lg:px-[100px] flex justify-center items-center py-12 lg:py-0"
       style={{
         background: `url(${availableBg}) no-repeat center center`,
         backgroundSize: "cover",

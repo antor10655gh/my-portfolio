@@ -12,7 +12,7 @@ import { LuBarChart3 } from "react-icons/lu";
 const HomeServices = () => {
   return (
     <div
-      className="min-h-screen w-full px-4 lg:px-[100px]"
+      className="min-h-screen w-full px-4 lg:px-[100px] pb-12 lg:pb-0"
       style={{
         background: `url(${homeServicetBg}) no-repeat center center`,
         backgroundSize: "cover",
