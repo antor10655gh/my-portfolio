@@ -7,7 +7,7 @@ import { FaBriefcase, FaDollarSign, FaShieldAlt } from "react-icons/fa";
 const WelcomeSite = () => {
   return (
     <div
-      className="min-h-screen w-full px-4 lg:px-[100px] flex justify-center items-center"
+      className="min-h-screen w-full px-4 lg:px-[100px] flex justify-center items-center pt-12 lg:pt-0"
       style={{
         background: `url(${welcomeSiteBg}) no-repeat center center`,
         backgroundSize: "cover",
