@@ -6,21 +6,28 @@ import { FaBriefcase, FaDollarSign, FaShieldAlt } from "react-icons/fa";
 
 const WelcomeSite = () => {
   return (
-    <div className="min-h-screen bg-transparent w-full px-4 lg:px-[100px] flex justify-center items-center pt-12 lg:pt-0">
-      <div className="w-full h-full flex flex-col justify-center items-center overflow-hidden">
+    <div className="bg-transparent w-full px-4 lg:px-0 flex justify-center items-center py-12 lg:py-[100px]">
+      <div className="max-w-screen-xl mx-auto h-full flex flex-col justify-center items-center overflow-hidden">
         <header
           data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           className="flex flex-col justify-center items-center text-center"
         >
-          <h1 className="text-3xl lg:text-5xl">Welcome To My Site</h1>
-          <div className="flex justify-center items-center gap-2 mt-2">
-            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
-            <div className="w-4 h-4 bg-[#00637e] rounded-full"></div>
-            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
+          <div className="relative z-10">
+            <h1 className="text-3xl lg:text-5xl font-bold z-40 relative">
+              Welcome To My Site
+            </h1>
+            <div className="flex justify-center items-center gap-2 mt-2 absolute right-0 bottom-0 z-20 rotate-[-5deg] ">
+              <img
+                src="/blue-line.png"
+                alt="blue-line"
+                className="scale-in-bl"
+              />
+            </div>
           </div>
-          <p className="my-3 lg:w-3/4 text-gray-500 text-sm">
+
+          <p className="my-3 lg:w-3/4 text-gray-500 text-sm md:text-md lg:text-lg mt-5">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
             posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
             sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum
@@ -28,7 +35,7 @@ const WelcomeSite = () => {
             Nulla mollis dapibus nunc
           </p>
         </header>
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-5 my-12">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5 lg:mt-10">
           <div
             data-aos="zoom-in"
             data-aos-duration="1000"

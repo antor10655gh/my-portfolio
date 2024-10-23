@@ -2,6 +2,7 @@ import React from "react";
 import avatar from "../../assets/images/avatar.jpg";
 import banner from "../../assets/images/banner.jpg";
 import { TypeAnimation } from "react-type-animation";
+import PrimaryButton from "../primarybutton/PrimaryButton";
 
 const Hero = () => {
   return (
@@ -46,8 +47,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex gap-4 items-center mt-10">
-            <button className="button">Get More</button>
-            <button className="button">Download CV</button>
+            <PrimaryButton btnText="About Me" link="about" />
           </div>
         </div>
       </div>

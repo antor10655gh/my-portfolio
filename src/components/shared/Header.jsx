@@ -59,12 +59,16 @@ const Header = () => {
       {/* Desktop Header */}
       <div
         id="myHeader"
-        className={`hidden lg:flex lg:justify-between lg:items-center lg:px-[100px] py-5 ${headerClasses}`}
+        className={`hidden lg:flex w-full py-5 ${headerClasses}`}
       >
-        <Link to="/">
-          <img src={logo} alt="Logo" className="w-[100px] h-[30px]" />
-        </Link>
-        <ul className="flex gap-8 items-center text-md">{renderMenuItems()}</ul>
+        <div className="max-w-screen-xl w-full mx-auto flex justify-between items-center lg:flex lg:justify-between lg:items-center">
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
+          <ul className="flex gap-8 items-center text-md">
+            {renderMenuItems()}
+          </ul>
+        </div>
       </div>
 
       {/* Mobile Header */}
@@ -72,7 +76,9 @@ const Header = () => {
         id="myHeader"
         className={`lg:hidden flex justify-between items-center ${headerClasses}`}
       >
-        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
         <GiHamburgerMenu
           size={30}
           onClick={toggleMenu}
