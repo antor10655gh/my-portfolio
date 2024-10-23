@@ -3,8 +3,15 @@ import avatar from "../../assets/images/avatar.jpg";
 import banner from "../../assets/images/banner.jpg";
 import { TypeAnimation } from "react-type-animation";
 import PrimaryButton from "../primarybutton/PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about");
+  };
+
   return (
     <div
       className="flex justify-center items-center h-screen overflow-hidden"
@@ -47,7 +54,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex gap-4 items-center mt-10">
-            <PrimaryButton btnText="About Me" link="about" />
+            <PrimaryButton btnText="About Me" handleClick={handleClick} />
           </div>
         </div>
       </div>

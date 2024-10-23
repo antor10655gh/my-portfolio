@@ -1,14 +1,7 @@
 import React from "react";
 import "./PrimaryButton.css";
-import { useNavigate } from "react-router-dom";
 
-const PrimaryButton = ({ btnText, link }) => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(`/${link}`);
-  };
-
+const PrimaryButton = ({ btnText, handleClick }) => {
   return (
     <button className="primary-btn" onClick={handleClick}>
       <span>{btnText}</span>
