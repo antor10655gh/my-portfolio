@@ -2,12 +2,14 @@
 import React from "react";
 import Header from "./Header";
 import AppRoute from "../../routes/AppRoute";
+import GoToTop from "../GoToTop/GoToTop";
 
 const Layout = () => {
   return (
     <div className="relative">
       <Header />
       <AppRoute />
+      <GoToTop />
     </div>
   );
 };
