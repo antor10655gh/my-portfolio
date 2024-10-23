@@ -14,9 +14,9 @@ const HomeDo = () => {
         >
           <h1 className="text-3xl lg:text-5xl">I Love What I Do</h1>
           <div className="flex justify-center items-center gap-2 mt-2">
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
-            <div className="w-4 h-4 bg-[#22ddae] rounded-full"></div>
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
+            <div className="w-4 h-4 bg-[#00637e] rounded-full"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
           </div>
           <p className="my-3 lg:w-3/4 text-gray-500 text-sm">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices

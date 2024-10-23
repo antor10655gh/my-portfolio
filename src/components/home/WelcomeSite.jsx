@@ -6,13 +6,7 @@ import { FaBriefcase, FaDollarSign, FaShieldAlt } from "react-icons/fa";
 
 const WelcomeSite = () => {
   return (
-    <div
-      className="min-h-screen w-full px-4 lg:px-[100px] flex justify-center items-center pt-12 lg:pt-0"
-      style={{
-        background: `url(${welcomeSiteBg}) no-repeat center center`,
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="min-h-screen bg-transparent w-full px-4 lg:px-[100px] flex justify-center items-center pt-12 lg:pt-0">
       <div className="w-full h-full flex flex-col justify-center items-center overflow-hidden">
         <header
           data-aos="zoom-in"
@@ -22,9 +16,9 @@ const WelcomeSite = () => {
         >
           <h1 className="text-3xl lg:text-5xl">Welcome To My Site</h1>
           <div className="flex justify-center items-center gap-2 mt-2">
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
-            <div className="w-4 h-4 bg-[#22ddae] rounded-full"></div>
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
+            <div className="w-4 h-4 bg-[#00637e] rounded-full"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
           </div>
           <p className="my-3 lg:w-3/4 text-gray-500 text-sm">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -41,7 +35,7 @@ const WelcomeSite = () => {
             data-aos-easing="ease-in-out"
             className="card"
           >
-            <FaBriefcase className="text-[#22ddae]" size={30} />
+            <FaBriefcase className="text-[#00637e]" size={30} />
             <h1 className="text-xl font-bold">Want An Expert</h1>
             <p className="text-sm text-gray-500">
               Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
@@ -54,7 +48,7 @@ const WelcomeSite = () => {
             data-aos-easing="ease-in-out"
             className="card"
           >
-            <FaShieldAlt className="text-[#22ddae]" size={30} />
+            <FaShieldAlt className="text-[#00637e]" size={30} />
             <h1 className="text-xl font-bold">Unlimited Revisions</h1>
             <p className="text-sm text-gray-500">
               Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
@@ -67,7 +61,7 @@ const WelcomeSite = () => {
             data-aos-easing="ease-in-out"
             className="card"
           >
-            <FaDollarSign className="text-[#22ddae]" size={30} />
+            <FaDollarSign className="text-[#00637e]" size={30} />
             <h1 className="text-xl font-bold">Let's Discuss</h1>
             <p className="text-sm text-gray-500">
               Lorem ipsum dolor sit amet sed consectetur adipisicing elit.

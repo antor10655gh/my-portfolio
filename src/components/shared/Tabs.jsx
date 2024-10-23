@@ -89,10 +89,10 @@ const Tabs = () => {
               className={({ selected }) =>
                 classNames(
                   "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-black",
-                  "ring-white/60 ring-offset-2 ring-offset-[#22ddae] focus:outline-none focus:ring-2",
+                  "ring-white/60 ring-offset-2 ring-offset-[#00637e] focus:outline-none focus:ring-2",
                   selected
-                    ? "bg-white text-[#22ddae] shadow"
-                    : "text-[#22ddae] hover:bg-white/[0.12] hover:text-[#22ddae]"
+                    ? "bg-white text-[#00637e] shadow"
+                    : "text-[#00637e] hover:bg-white/[0.12] hover:text-[#00637e]"
                 )
               }
             >

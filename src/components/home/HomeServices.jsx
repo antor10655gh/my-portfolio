@@ -27,9 +27,9 @@ const HomeServices = () => {
         >
           <h1 className="text-3xl lg:text-5xl">My Services</h1>
           <div className="flex justify-center items-center gap-2 mt-2">
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
-            <div className="w-4 h-4 bg-[#22ddae] rounded-full"></div>
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
+            <div className="w-4 h-4 bg-[#00637e] rounded-full"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
           </div>
           <p className="my-3 lg:w-3/4 text-gray-500 text-sm">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -45,7 +45,7 @@ const HomeServices = () => {
             className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
           >
             <div>
-              <div className="bg-[#22ddae] p-3 rounded-md">
+              <div className="bg-[#00637e] p-3 rounded-md">
                 <ImEmbed2 className="text-white inline" size={30} />
               </div>
             </div>
@@ -70,7 +70,7 @@ const HomeServices = () => {
             className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
           >
             <div>
-              <div className="bg-[#22ddae] p-3 rounded-md">
+              <div className="bg-[#00637e] p-3 rounded-md">
                 <TbSettingsCode className="text-white inline" size={30} />
               </div>
             </div>
@@ -95,7 +95,7 @@ const HomeServices = () => {
             className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
           >
             <div>
-              <div className="bg-[#22ddae] p-3 rounded-md">
+              <div className="bg-[#00637e] p-3 rounded-md">
                 <FaMobileAlt className="text-white inline" size={30} />
               </div>
             </div>
@@ -120,7 +120,7 @@ const HomeServices = () => {
             className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
           >
             <div>
-              <div className="bg-[#22ddae] p-3 rounded-md">
+              <div className="bg-[#00637e] p-3 rounded-md">
                 <IoLockClosed className="text-white inline" size={30} />
               </div>
             </div>
@@ -145,7 +145,7 @@ const HomeServices = () => {
             className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
           >
             <div>
-              <div className="bg-[#22ddae] p-3 rounded-md">
+              <div className="bg-[#00637e] p-3 rounded-md">
                 <LuBarChart3 className="text-white inline" size={30} />
               </div>
             </div>
@@ -170,7 +170,7 @@ const HomeServices = () => {
             className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
           >
             <div>
-              <div className="bg-[#22ddae] p-3 rounded-md">
+              <div className="bg-[#00637e] p-3 rounded-md">
                 <FaInfo className="text-white inline" size={30} />
               </div>
             </div>

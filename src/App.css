@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 /* header link style */
+
+.scrolled-bg {
+  background: rgba(7, 74, 122, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 .cta {
   border: none;
   background: none;
   cursor: pointer;
-}
-
-.cta span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 14px;
-  padding-right: 15px;
-  text-transform: uppercase;
 }
 
 .hover-underline-animation {
@@ -29,12 +29,12 @@ body {
 .hover-underline-animation:after {
   content: "";
   position: absolute;
-  width: 80%;
+  width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #22ddae;
+  background-color: #00637e;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -49,7 +49,6 @@ body {
 /* hero button style */
 .button {
   padding: 10px 20px;
-  font-size: 16px;
   background: transparent;
   border: none;
   position: relative;
@@ -124,7 +123,7 @@ body {
 
 .card:hover h1 {
   transition: all 0.5s ease-in-out;
-  color: #22ddae;
+  color: #00637e;
 }
 
 /* read more button style */
@@ -145,7 +144,7 @@ body {
 
 .readmore-btn:focus,
 .readmore-btn:hover {
-  color: #22ddae;
+  color: #00637e;
 }
 
 .readmore-btn:focus:after,
@@ -163,7 +162,7 @@ body {
   position: absolute;
   pointer-events: none;
   transition-duration: 400ms;
-  background-color: #22ddae;
+  background-color: #00637e;
   transition-property: width, left;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -190,7 +189,7 @@ body {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #22ddae;
+  background-color: #00637e;
   border-radius: 0 4px 0 32px;
 }
 
@@ -219,7 +218,7 @@ body {
   z-index: -1;
   top: -16px;
   right: -16px;
-  background: #22ddae;
+  background: #00637e;
   height: 32px;
   width: 32px;
   border-radius: 32px;

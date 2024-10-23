@@ -24,9 +24,9 @@ const HomeAvailable = () => {
         >
           <h1 className="text-3xl lg:text-5xl">I'm Available For Hire</h1>
           <div className="flex justify-center items-center gap-2 mt-2">
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
-            <div className="w-4 h-4 bg-[#22ddae] rounded-full"></div>
-            <div className="w-[60px] h-[2px] bg-[#22ddae]"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
+            <div className="w-4 h-4 bg-[#00637e] rounded-full"></div>
+            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
           </div>
           <p className="my-3 lg:w-3/4 text-sm">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -41,7 +41,7 @@ const HomeAvailable = () => {
             data-aos-easing="ease-in-out"
             className="bg-opacity-5 bg-white backdrop-blur-sm shadow-lg rounded-md p-8 flex flex-col items-center text-center gap-4 hover:bg-black hover:text-white hover:bg-opacity-75 transition duration-300"
           >
-            <FaPaintBrush className="text-[#22ddae]" size={40} />
+            <FaPaintBrush className="text-[#00637e]" size={40} />
             <h1 className="text-xl">Web Design</h1>
             <p className="text-sm">
               Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
@@ -54,7 +54,7 @@ const HomeAvailable = () => {
             data-aos-easing="ease-in-out"
             className="bg-opacity-5 bg-white backdrop-blur-sm shadow-lg rounded-md p-8 flex flex-col items-center text-center gap-4 hover:bg-black hover:text-white hover:bg-opacity-75 transition duration-300"
           >
-            <SiSimilarweb className="text-[#22ddae]" size={40} />
+            <SiSimilarweb className="text-[#00637e]" size={40} />
             <h1 className="text-xl">Web Development</h1>
             <p className="text-sm">
               Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
@@ -67,7 +67,7 @@ const HomeAvailable = () => {
             data-aos-easing="ease-in-out"
             className="bg-opacity-5 bg-white backdrop-blur-sm shadow-lg rounded-md p-8 flex flex-col items-center text-center gap-4 hover:bg-black hover:text-white hover:bg-opacity-75 transition duration-300"
           >
-            <SiSemanticweb className="text-[#22ddae]" size={40} />
+            <SiSemanticweb className="text-[#00637e]" size={40} />
             <h1 className="text-xl">Full Stack Development</h1>
             <p className="text-sm">
               Lorem ipsum dolor sit amet sed consectetur adipisicing elit.

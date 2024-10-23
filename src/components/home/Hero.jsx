@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import avatar from "../../assets/images/avatar.jpg";
 import banner from "../../assets/images/banner.jpg";
@@ -13,64 +11,44 @@ const Hero = () => {
         background: `url(${banner}) no-repeat center center / cover`,
       }}
     >
-      <div className="w-full h-full bg-black bg-opacity-50 bg-black backdrop-blur-sm flex flex-col justify-center items-center text-white">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          className="rounded-full mt-12 w-[270px] h-[270px] lg:w-[140px] lg:h-[140px] bg-white flex justify-center items-center"
-        >
-          <img
-            src={avatar}
-            alt="avatar.jpg"
-            className="rounded-full w-60 h-60 lg:w-32 lg:h-32"
-          />
-        </div>
-        <div
-          data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          className="mt-5 text-center"
-        >
-          <h1 className="text-[60px] tracking-wide uppercase">
-            Hello, I'm Antor
-          </h1>
-          <p className="text-[20px] tracking-wide mt-2">
-            I am a{" "}
-            <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed once, initially
-                "Web Developer",
-                1000,
-                "Web Designer",
-                1000,
-                "Full Stack Developer",
-                1000,
-              ]}
-              speed={50}
-              style={{ fontSize: "20px", color: "#22DDAE" }}
-              repeat={Infinity}
-            />
-          </p>
-        </div>
-        <div className="flex gap-4 items-center mt-10">
-          <button
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="button"
-          >
-            Get More
-          </button>
-          <button
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="button"
-          >
-            Download CV
-          </button>
+      <div className="w-full h-full px-4 lg:px-0 text-white">
+        <div className="max-w-screen-xl mx-auto h-full flex flex-col justify-center">
+          <div>
+            <h1 className="text-[35px] md:text-[50px] lg:text-[60px] tracking-wide uppercase font-bold">
+              Hello, I'm Antor
+            </h1>
+            <p className="text-[40px] md:text-[50px] lg:text-[60px] tracking-wide font-bold">
+              <TypeAnimation
+                sequence={[
+                  "Web Developer",
+                  1000,
+                  "Web Designer",
+                  1000,
+                  "UI/UX Designer",
+                  1000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+                className="text-white"
+                style={{
+                  fontSize: "clamp(35px, 5vw, 60px)", // Responsive font size between 24px to 60px
+                  fontWeight: "bold", // Optional for better appearance
+                  textAlign: "center", // Ensures it aligns well across devices
+                }}
+              />
+            </p>
+            <p className="w-full md:w-2/4 mt-5">
+              It’s Antor, Professional Web Developer. I love to write code, it’s
+              my passoin. I am here to help you, I am here to design your web
+              page.I can help you to describe yourself in the best way. No
+              matter how difficult your web page is, I'll find an easy way and
+              complete your work anyway. Stay connect with me……..😊
+            </p>
+          </div>
+          <div className="flex gap-4 items-center mt-10">
+            <button className="button">Get More</button>
+            <button className="button">Download CV</button>
+          </div>
         </div>
       </div>
     </div>
