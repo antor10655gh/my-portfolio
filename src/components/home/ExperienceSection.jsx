@@ -146,7 +146,7 @@ const ExperienceSection = () => {
           >
             1.5 Years Of Experience
           </h1>
-          <div className="flex justify-center items-center gap-2 mt-2 absolute right-[25%] md:right-[35%] bottom-3 md:bottom-10 z-20 rotate-[-5deg] ">
+          <div className="flex justify-center items-center gap-2 mt-2 absolute right-[25%] md:right-[35%] bottom-3 md:bottom-7 z-20 rotate-[-5deg] ">
             <img src="/blue-line.png" alt="blue-line" className="scale-in-bl" />
           </div>
         </div>

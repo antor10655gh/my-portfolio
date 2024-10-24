@@ -67,7 +67,9 @@ const ClientFeedbackSlider = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     customPaging: (i) => (
-      <div className="custom-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-blue-500" />
+      <div className="border border-gray-500 w-5 h-5 flex justify-center items-center rounded-full">
+        <div className="custom-dot w-3 h-3 rounded-full bg-gray-300 hover:bg-blue-500" />
+      </div>
     ),
     appendDots: (dots) => (
       <div className="custom-dots-container mt-5">
@@ -108,39 +110,35 @@ const ClientFeedbackSlider = () => {
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div className="container">
-        <div className="home-customer-say">
-          <div>
-            <Slider {...settings}>
-              {reviews.map((review) => (
-                <div className="" key={review.id}>
-                  <div className="mx-5">
-                    <div className="flex items-center gap-4">
-                      <div className="w-20 h-20 rounded-full overflow-hidden">
-                        <img
-                          src={review.image}
-                          alt={review.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-lg md:text-2xl">
-                          {review.name}
-                        </h3>
-                        <h6>{review.designation}</h6>
-                      </div>
-                    </div>
-                    <div className="mt-3">
-                      <p className="text-sm md:text-lg text-gray-500">
-                        {review.description}
-                      </p>
-                    </div>
+      <div className="home-customer-say">
+        <Slider {...settings}>
+          {reviews.map((review) => (
+            <div className="py-8" key={review.id}>
+              <div className="mx-5 md:mx-10">
+                <div className="flex items-center gap-4">
+                  <div className="w-20 h-20 rounded-full overflow-hidden">
+                    <img
+                      src={review.image}
+                      alt={review.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg md:text-2xl">
+                      {review.name}
+                    </h3>
+                    <h6>{review.designation}</h6>
                   </div>
                 </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
+                <div className="mt-3">
+                  <p className="text-sm md:text-lg text-gray-500">
+                    {review.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );

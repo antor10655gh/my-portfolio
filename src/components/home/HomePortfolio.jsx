@@ -1,7 +1,7 @@
 import React from "react";
-import ClientFeedbackSlider from "../sliders/ClientFeedbackSlider";
+import PortfolioTab from "../portfolio-tab/PortfolioTab";
 
-const ClientSay = () => {
+const HomePortfolio = () => {
   return (
     <div className="px-4 lg:px-0 py-[40px] md:py-[70px] lg:py-[100px]">
       <div className="max-w-screen-xl mx-auto h-full">
@@ -12,7 +12,7 @@ const ClientSay = () => {
           data-aos-easing="ease-in-out"
         >
           <img src="/rec.png" alt="rec.png" className="w-5 h-5" />
-          <p className="text-sm">Testimonial</p>
+          <p className="text-sm">My Portfolio</p>
         </div>
         <div
           className="relative z-10 flex justify-center items-center text-center overflow-hidden"
@@ -22,18 +22,18 @@ const ClientSay = () => {
         >
           <h1
             style={{ lineHeight: "1.2" }}
-            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-6 z-40 relative"
+            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-6 z-30 relative"
           >
-            Client Feedback
+            VISIT MY PORTFOLIO
           </h1>
           <div className="flex justify-center items-center gap-2 mt-2 absolute right-[25%] md:right-[35%] bottom-3 md:bottom-7 z-20 rotate-[-5deg] ">
             <img src="/blue-line.png" alt="blue-line" className="scale-in-bl" />
           </div>
         </div>
-        <ClientFeedbackSlider />
+        <PortfolioTab />
       </div>
     </div>
   );
 };
 
-export default ClientSay;
+export default HomePortfolio;

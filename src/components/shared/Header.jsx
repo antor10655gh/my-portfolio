@@ -59,7 +59,7 @@ const Header = () => {
       {/* Desktop Header */}
       <div
         id="myHeader"
-        className={`hidden lg:flex w-full py-5 ${headerClasses}`}
+        className={`hidden lg:flex w-full py-5 ${headerClasses} z-50`}
       >
         <div className="max-w-screen-xl w-full mx-auto flex justify-between items-center lg:flex lg:justify-between lg:items-center">
           <Link to="/">
