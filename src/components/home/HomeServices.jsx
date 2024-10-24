@@ -63,11 +63,11 @@ const HomeServices = () => {
         >
           <h1
             style={{ lineHeight: "1.2" }}
-            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-8 z-40 relative"
+            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-6 z-40 relative"
           >
             Services I offer
           </h1>
-          <div className="flex justify-center items-center gap-2 mt-2 absolute right-[25%] md:right-[35%] bottom-3 md:bottom-10 z-20 rotate-[-5deg] ">
+          <div className="flex justify-center items-center gap-2 mt-2 absolute right-[25%] md:right-[35%] bottom-3 md:bottom-8 z-20 rotate-[-5deg] ">
             <img src="/blue-line.png" alt="blue-line" className="scale-in-bl" />
           </div>
         </div>

@@ -142,7 +142,7 @@ const ExperienceSection = () => {
         >
           <h1
             style={{ lineHeight: "1.2" }}
-            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-8 z-40 relative"
+            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-6 z-40 relative"
           >
             1.5 Years Of Experience
           </h1>
@@ -184,7 +184,11 @@ const ExperienceSection = () => {
           {/* Right Content */}
           <div className="w-full md:col-span-10 space-y-8 md:space-y-16">
             {/* Education Section */}
-            <div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h1 className="text-2xl font-semibold mb-2 block md:hidden">
                 Education
               </h1>
@@ -192,7 +196,11 @@ const ExperienceSection = () => {
             </div>
 
             {/* Skills Section */}
-            <div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h1 className="text-2xl font-semibold mb-2 block md:hidden">
                 Skills
               </h1>
@@ -200,7 +208,11 @@ const ExperienceSection = () => {
             </div>
 
             {/* Experience Section */}
-            <div>
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h1 className="text-2xl font-semibold mb-2 block md:hidden">
                 Experience
               </h1>
