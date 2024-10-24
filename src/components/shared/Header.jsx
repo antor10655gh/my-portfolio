@@ -74,7 +74,7 @@ const Header = () => {
       {/* Mobile Header */}
       <div
         id="myHeader"
-        className={`lg:hidden flex justify-between items-center ${headerClasses}`}
+        className={`lg:hidden flex justify-between items-center ${headerClasses} z-50`}
       >
         <Link to="/">
           <img src={logo} alt="Logo" />

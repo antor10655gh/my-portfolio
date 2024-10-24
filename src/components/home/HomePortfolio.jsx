@@ -3,7 +3,7 @@ import PortfolioTab from "../portfolio-tab/PortfolioTab";
 
 const HomePortfolio = () => {
   return (
-    <div className="px-4 lg:px-0 py-[40px] md:py-[70px] lg:py-[100px]">
+    <div className="bg-[#00637e3b] px-4 lg:px-0 py-[40px] md:py-[70px] lg:py-[100px]">
       <div className="max-w-screen-xl mx-auto h-full">
         <div
           className="flex items-center justify-center gap-2"
