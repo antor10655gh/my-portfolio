@@ -10,184 +10,97 @@ import { FaInfo, FaMobileAlt } from "react-icons/fa";
 import { LuBarChart3 } from "react-icons/lu";
 
 const HomeServices = () => {
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  const myServices = [
+    {
+      id: 1,
+      title: "UI/UX Design",
+      description:
+        "Crafting intuitive and visually appealing interfaces to enhance user experience.",
+      icon: "/services-icons/pentool",
+    },
+    {
+      id: 2,
+      title: "Web Design",
+      description:
+        "Designing responsive and modern websites focused on aesthetics and usability.",
+      icon: "/services-icons/webdesign",
+    },
+    {
+      id: 3,
+      title: "Web Development",
+      description:
+        "Building dynamic and scalable websites with front-end and back-end integration.",
+      icon: "/services-icons/development",
+    },
+    {
+      id: 4,
+      title: "Backend Development",
+      description:
+        "Developing robust backend systems with APIs, databases, and server-side logic.",
+      icon: "/services-icons/backend",
+    },
+  ];
+
   return (
-    <div
-      className="min-h-screen w-full px-4 lg:px-[100px] pb-12 lg:pb-0"
-      style={{
-        background: `url(${homeServicetBg}) no-repeat center center`,
-        backgroundSize: "cover",
-      }}
-    >
-      <div className="w-full h-full flex flex-col justify-center items-center overflow-hidden">
-        <header
+    <div className="w-full px-4 md:px-0 py-[40px] md:py-[70px] lg:py-[100px]">
+      <div className="max-w-screen-xl mx-auto h-full">
+        <div
+          className="flex items-center justify-center gap-2"
           data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-          className="flex flex-col justify-center items-center text-center mt-8 lg:mt-12"
         >
-          <h1 className="text-3xl lg:text-5xl">My Services</h1>
-          <div className="flex justify-center items-center gap-2 mt-2">
-            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
-            <div className="w-4 h-4 bg-[#00637e] rounded-full"></div>
-            <div className="w-[60px] h-[2px] bg-[#00637e]"></div>
-          </div>
-          <p className="my-3 lg:w-3/4 text-gray-500 text-sm">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
-            sodales quis. Integer sit amet mattis quam.
-          </p>
-        </header>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[30px] mt-5 lg:mt-10">
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
+          <img src="/rec.png" alt="rec.png" className="w-5 h-5" />
+          <p className="text-sm">My Services</p>
+        </div>
+        <div
+          className="relative z-10 flex justify-center items-center text-center overflow-hidden"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <h1
+            style={{ lineHeight: "1.2" }}
+            className="text-2xl lg:text-5xl font-bold w-full my-4 lg:my-8 z-40 relative"
           >
-            <div>
-              <div className="bg-[#00637e] p-3 rounded-md">
-                <ImEmbed2 className="text-white inline" size={30} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-xxl font-bold">Website Design</h1>
-              <p className="text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
-                eiusmod tempor incididunt
-              </p>
-              <div className="flex items-center gap-2">
-                <Link to="/" className="flex items-center gap-2 readmore-btn">
-                  Read more
-                  <IoIosArrowForward />
-                </Link>
-              </div>
-            </div>
+            Services I offer
+          </h1>
+          <div className="flex justify-center items-center gap-2 mt-2 absolute right-[25%] md:right-[35%] bottom-3 md:bottom-10 z-20 rotate-[-5deg] ">
+            <img src="/blue-line.png" alt="blue-line" className="scale-in-bl" />
           </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
-          >
-            <div>
-              <div className="bg-[#00637e] p-3 rounded-md">
-                <TbSettingsCode className="text-white inline" size={30} />
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 md:mt-8"
+        >
+          {myServices.map((service) => (
+            <div class="service-card group p-5 bg-white border border-[#00637e60] rounded-md transition-all duration-300 cursor-pointer hover:bg-[#00637e]">
+              <div class="service-icon">
+                <img
+                  src={`${service.icon}-dark.png`}
+                  alt="pentool icon"
+                  class="group-hover:hidden mx-auto aspect-square w-20 h-20"
+                />
+                <img
+                  src={`${service.icon}-light.png`}
+                  alt="pentool icon"
+                  class="hidden group-hover:block mx-auto aspect-square w-20 h-20"
+                />
+              </div>
+              <div class="service-info text-center mt-2">
+                <h1 class="text-xl md:text-2xl font-semibold text-black group-hover:text-white transition-colors duration-300">
+                  {service.title}
+                </h1>
+                <p class="text-sm md:text-md text-gray-600 group-hover:text-white transition-colors duration-300">
+                  {service.description}
+                </p>
               </div>
             </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-xxl font-bold">Website Development</h1>
-              <p className="text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
-                eiusmod tempor incididunt
-              </p>
-              <div className="flex items-center gap-2">
-                <Link to="/" className="flex items-center gap-2 readmore-btn">
-                  Read more
-                  <IoIosArrowForward />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
-          >
-            <div>
-              <div className="bg-[#00637e] p-3 rounded-md">
-                <FaMobileAlt className="text-white inline" size={30} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-xxl font-bold">App Development</h1>
-              <p className="text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
-                eiusmod tempor incididunt
-              </p>
-              <div className="flex items-center gap-2">
-                <Link to="/" className="flex items-center gap-2 readmore-btn">
-                  Read more
-                  <IoIosArrowForward />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
-          >
-            <div>
-              <div className="bg-[#00637e] p-3 rounded-md">
-                <IoLockClosed className="text-white inline" size={30} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-xxl font-bold">Cyber Security</h1>
-              <p className="text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
-                eiusmod tempor incididunt
-              </p>
-              <div className="flex items-center gap-2">
-                <Link to="/" className="flex items-center gap-2 readmore-btn">
-                  Read more
-                  <IoIosArrowForward />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
-          >
-            <div>
-              <div className="bg-[#00637e] p-3 rounded-md">
-                <LuBarChart3 className="text-white inline" size={30} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-xxl font-bold">Digital Marketing</h1>
-              <p className="text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
-                eiusmod tempor incididunt
-              </p>
-              <div className="flex items-center gap-2">
-                <Link to="/" className="flex items-center gap-2 readmore-btn">
-                  Read more
-                  <IoIosArrowForward />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            className="hover:shadow-inner-md hover:bg-gray-100 p-5 transition-all duration-300 rounded-md flex items-start gap-4"
-          >
-            <div>
-              <div className="bg-[#00637e] p-3 rounded-md">
-                <FaInfo className="text-white inline" size={30} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-xxl font-bold">Other Category</h1>
-              <p className="text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
-                eiusmod tempor incididunt
-              </p>
-              <div className="flex items-center gap-2">
-                <Link to="/" className="flex items-center gap-2 readmore-btn">
-                  Read more
-                  <IoIosArrowForward />
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

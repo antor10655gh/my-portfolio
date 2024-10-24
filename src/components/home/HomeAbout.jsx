@@ -11,7 +11,7 @@ const HomeAbout = () => {
   };
 
   return (
-    <div className="w-full h-full px-4 lg:px-0 py-[20px] md:py-[50px] lg:py-[100px]">
+    <div className="w-full h-full px-4 lg:px-0 py-[40px] md:py-[70px] lg:py-[100px]">
       <div className="max-w-screen-xl mx-auto h-full">
         <div className="grid md:grid-cols-2 gap-4 md:gap-12 lg:gap-20">
           <div className="col-span-1">
