@@ -7,6 +7,8 @@ import ExperienceSection from "../components/home/ExperienceSection";
 import ClientSay from "../components/home/ClientSay";
 import HomePortfolio from "../components/home/HomePortfolio";
 import LatestBlogs from "../components/home/LatestBlogs";
+import HomeContact from "../components/home/HomeContact";
+import Footer from "../components/shared/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
       <ClientSay />
       <HomePortfolio />
       <LatestBlogs />
+      <HomeContact />
     </div>
   );
 };

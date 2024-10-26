@@ -13,9 +13,10 @@ const Header = () => {
   // Define the menu items for navigation
   const menuItems = [
     { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
     { name: "Services", link: "/services" },
     { name: "Works", link: "/works" },
-    { name: "About", link: "/about" },
+    { name: "Blogs", link: "/blogs" },
     { name: "Contact", link: "/contact" },
   ];
 
