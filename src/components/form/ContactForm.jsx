@@ -82,6 +82,9 @@ const ContactForm = () => {
               required
               onChange={handleChange}
               value={form.phone}
+              maxLength={11}
+              minLength={11}
+              pattern="^(013|014|015|016|017|018|019)[0-9]{8}$"
             />
           </div>
           <div className="w-full md:w-1/2">
