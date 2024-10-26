@@ -73,28 +73,37 @@ const Footer = () => {
             <h2 className="text-2xl font-bold mb-5 text-white">Follow Me</h2>
             <ul className="flex items-center gap-3">
               <li>
-                <Link to="#">
+                <Link
+                  to="https://www.facebook.com/mdabdulmotaleb.antor/"
+                  target="_blank"
+                >
                   <div className="group bg-[#00637e] w-10 h-10 flex justify-center items-center rounded-md hover:bg-white transition-all duration-300">
                     <FaFacebookF className="text-white text-xl group-hover:text-[#00637e] transition-all duration-300" />
                   </div>
                 </Link>
               </li>
               <li>
-                <Link to="#">
+                <Link to="https://x.com/MdAntor16617412" target="_blank">
                   <div className="group bg-[#00637e] w-10 h-10 flex justify-center items-center rounded-md hover:bg-white transition-all duration-300">
                     <FaTwitter className="text-white text-xl group-hover:text-[#00637e] transition-all duration-300" />
                   </div>
                 </Link>
               </li>
               <li>
-                <Link to="#">
+                <Link
+                  to="https://www.linkedin.com/in/am-antor/"
+                  target="_blank"
+                >
                   <div className="group bg-[#00637e] w-10 h-10 flex justify-center items-center rounded-md hover:bg-white transition-all duration-300">
                     <FaLinkedinIn className="text-white text-xl group-hover:text-[#00637e] transition-all duration-300" />
                   </div>
                 </Link>
               </li>
               <li>
-                <Link to="#">
+                <Link
+                  to="https://www.instagram.com/antor_1999/"
+                  target="_blank"
+                >
                   <div className="group bg-[#00637e] w-10 h-10 flex justify-center items-center rounded-md hover:bg-white transition-all duration-300">
                     <FaInstagram className="text-white text-xl group-hover:text-[#00637e] transition-all duration-300" />
                   </div>

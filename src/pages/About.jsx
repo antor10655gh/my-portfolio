@@ -2,12 +2,14 @@
 import React from "react";
 import PageHeading from "../components/shared/PageHeading";
 import HomeAbout from "../components/home/HomeAbout";
+import TestimonialCarousel from "../components/about/TestimonialCarousel";
 
 const About = () => {
   return (
     <div>
       <PageHeading pageName="About" />
       <HomeAbout />
+      <TestimonialCarousel />
     </div>
   );
 };
