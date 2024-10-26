@@ -289,3 +289,21 @@ body {
     opacity: 1;
   }
 }
+
+/* Background Animation */
+.bg-animated {
+  background-repeat: no-repeat;
+  background-position: 0 50%; /* Start position */
+  background-size: cover;
+  animation: backgroundMove 5s infinite alternate ease-in-out;
+}
+
+/* Keyframes for Left-to-Right Movement */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
