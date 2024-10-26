@@ -1,5 +1,4 @@
 import React from "react";
-import avatar from "../../assets/images/avatar.jpg";
 import banner from "../../assets/images/banner.jpg";
 import { TypeAnimation } from "react-type-animation";
 import PrimaryButton from "../primarybutton/PrimaryButton";

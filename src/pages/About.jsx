@@ -3,6 +3,7 @@ import React from "react";
 import PageHeading from "../components/shared/PageHeading";
 import HomeAbout from "../components/home/HomeAbout";
 import TestimonialCarousel from "../components/about/TestimonialCarousel";
+import LetsDo from "../components/about/LetsDo";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       <PageHeading pageName="About" />
       <HomeAbout />
       <TestimonialCarousel />
+      <LetsDo />
     </div>
   );
 };

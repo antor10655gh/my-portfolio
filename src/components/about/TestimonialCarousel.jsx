@@ -74,8 +74,8 @@ const TestimonialCarousel = () => {
 
         {/* Right Section: Carousel Content */}
         <div className="w-full md:w-2/3">
-          <h3 className="text-orange-500 text-sm uppercase mb-2 flex items-center gap-2">
-            <FaQuoteRight className="text-orange-500" />
+          <h3 className="text-[#00637e] text-sm uppercase mb-2 flex items-center gap-2">
+            <FaQuoteRight className="text-[#00637e]" />
             Testimonial
           </h3>
           <h2 className="text-3xl font-bold mb-6">My Customer Say</h2>
@@ -101,7 +101,7 @@ const TestimonialCarousel = () => {
                 alt={testimonial.name}
                 onClick={() => handleAvatarClick(index)}
                 className={`w-10 h-10 rounded-full cursor-pointer ${
-                  activeSlide === index ? "ring-2 ring-orange-500" : ""
+                  activeSlide === index ? "ring-2 ring-[#00637e]" : ""
                 }`}
               />
             ))}
