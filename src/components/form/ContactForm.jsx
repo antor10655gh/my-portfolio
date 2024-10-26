@@ -111,7 +111,9 @@ const ContactForm = () => {
             value={form.message}
           />
         </div>
-        <PrimaryButton btnText="Send Message" handleClick={handleSubmit} />
+        <div className="mt-3">
+          <PrimaryButton btnText="Send Message" handleClick={handleSubmit} />
+        </div>
       </form>
     </>
   );
